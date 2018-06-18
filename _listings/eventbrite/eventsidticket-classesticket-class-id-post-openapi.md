@@ -3,12 +3,12 @@ swagger: "2.0"
 x-collection-name: Eventbrite
 x-complete: 0
 info:
-  title: Eventbrite Add Events  Ticket Classes Ticket Class
+  title: Eventbrite Post Events Ticket Classes Ticket Class
   description: Updates an existing ticket class, returning the updated result as a
     ticket_class under the key ticket_class.
   version: 1.0.0
-host: www.eventbriteapi.com
-basePath: /v3
+host: www.eventbrite.com
+basePath: /%7Bdata-type%7D/
 schemes:
 - http
 produces:
@@ -18,7 +18,7 @@ consumes:
 paths:
   /events/{id}/ticket_classes/:
     get:
-      summary: Get Events  Ticket Classes
+      summary: Get Events Ticket Classes
       description: |-
         Returns a paginated response with a key of
         ticket_classes, containing a list of ticket_class.
@@ -35,11 +35,10 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Ticket
       - Classes
     post:
-      summary: Add Events  Ticket Classes
+      summary: Post Events Ticket Classes
       description: |-
         Creates a new ticket class, returning the result as a ticket_class
         under the key ticket_class.
@@ -137,12 +136,11 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Ticket
       - Classes
   /events/{id}/ticket_classes/:ticket_class_id/:
     get:
-      summary: Get Events  Ticket Classes Ticket Class
+      summary: Get Events Ticket Classes Ticket Class
       description: |-
         Gets and returns a single ticket_class by ID, as the key
         ticket_class.
@@ -153,13 +151,12 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Ticket
       - Classes
-      - Ticket
+      - :ticket
       - Class
     post:
-      summary: Add Events  Ticket Classes Ticket Class
+      summary: Post Events Ticket Classes Ticket Class
       description: Updates an existing ticket class, returning the updated result
         as a ticket_class under the key ticket_class.
       operationId: postEventsTicketClassesTicketClass
@@ -256,10 +253,9 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Ticket
       - Classes
-      - Ticket
+      - :ticket
       - Class
 x-streamrank:
   polling_total_time_average: 0

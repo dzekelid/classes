@@ -3,13 +3,13 @@ swagger: "2.0"
 x-collection-name: Eventbrite
 x-complete: 0
 info:
-  title: Eventbrite Get Events  Ticket Classes
+  title: Eventbrite Get Events Ticket Classes
   description: |-
     Returns a paginated response with a key of
     ticket_classes, containing a list of ticket_class.
   version: 1.0.0
-host: www.eventbriteapi.com
-basePath: /v3
+host: www.eventbrite.com
+basePath: /%7Bdata-type%7D/
 schemes:
 - http
 produces:
@@ -19,7 +19,7 @@ consumes:
 paths:
   /events/{id}/ticket_classes/:
     get:
-      summary: Get Events  Ticket Classes
+      summary: Get Events Ticket Classes
       description: |-
         Returns a paginated response with a key of
         ticket_classes, containing a list of ticket_class.
@@ -36,7 +36,6 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Ticket
       - Classes
 x-streamrank:

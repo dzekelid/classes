@@ -4,10 +4,10 @@ x-collection-name: Eventbrite
 x-complete: 1
 info:
   title: Eventbrite
-  description: the-eventbrite-api-is-the-best-way-to-integrate-and-extend-eventbrite-for-your-event-or-organising-needs-version-3-of-the-api-brings-you-faster-responses-consistent-data-types-more-endpoints-and-easier-debugging-and-testing
+  description: create-manage--promote-events--add-eventmanagement-features-to-your-site--show-the-world-what-exciting-things-are-happening-around-them-
   version: 1.0.0
-host: www.eventbriteapi.com
-basePath: /v3
+host: www.eventbrite.com
+basePath: /%7Bdata-type%7D/
 schemes:
 - http
 produces:
@@ -17,7 +17,7 @@ consumes:
 paths:
   /events/{id}/ticket_classes/:
     get:
-      summary: Get Events  Ticket Classes
+      summary: Get Events Ticket Classes
       description: |-
         Returns a paginated response with a key of
         ticket_classes, containing a list of ticket_class.
@@ -34,11 +34,10 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Ticket
       - Classes
     post:
-      summary: Add Events  Ticket Classes
+      summary: Post Events Ticket Classes
       description: |-
         Creates a new ticket class, returning the result as a ticket_class
         under the key ticket_class.
@@ -136,12 +135,11 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Ticket
       - Classes
   /events/{id}/ticket_classes/:ticket_class_id/:
     get:
-      summary: Get Events  Ticket Classes Ticket Class
+      summary: Get Events Ticket Classes Ticket Class
       description: |-
         Gets and returns a single ticket_class by ID, as the key
         ticket_class.
@@ -152,13 +150,12 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Ticket
       - Classes
-      - Ticket
+      - :ticket
       - Class
     post:
-      summary: Add Events  Ticket Classes Ticket Class
+      summary: Post Events Ticket Classes Ticket Class
       description: Updates an existing ticket class, returning the updated result
         as a ticket_class under the key ticket_class.
       operationId: postEventsTicketClassesTicketClass
@@ -255,13 +252,12 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Ticket
       - Classes
-      - Ticket
+      - :ticket
       - Class
     delete:
-      summary: Delete Events  Ticket Classes Ticket Class
+      summary: Delete Events Ticket Classes Ticket Class
       description: 'Deletes the ticket class. Returns {&quot;deleted&quot;: true}.'
       operationId: deleteEventsTicketClassesTicketClass
       x-api-path-slug: eventsidticket-classesticket-class-id-delete
@@ -275,14 +271,13 @@ paths:
           description: OK
       tags:
       - Events
-      - ""
       - Ticket
       - Classes
-      - Ticket
+      - :ticket
       - Class
   /events/:event_id/ticket_classes/:ticket_class_id/ticket_groups/:ticket_group_id/:
     post:
-      summary: Add Events Event  Ticket Classes Ticket Class  Ticket Groups Ticket
+      summary: Post Events Event Ticket Classes Ticket Class Ticket Groups Ticket
         Group
       description: Add the Ticket Class with the specified :ticket_class_id that belongs
         to the event with :event_id to the Ticket Group identified by :ticket_group_id.
@@ -293,19 +288,17 @@ paths:
           description: OK
       tags:
       - Events
-      - Event
-      - ""
+      - :event
       - Ticket
       - Classes
-      - Ticket
+      - :ticket
       - Class
-      - ""
       - Ticket
       - Groups
-      - Ticket
+      - :ticket
       - Group
     delete:
-      summary: Delete Events Event  Ticket Classes Ticket Class  Ticket Groups Ticket
+      summary: Delete Events Event Ticket Classes Ticket Class Ticket Groups Ticket
         Group
       description: Remove the Ticket Class with the specified :ticket_class_id that
         belongs to the event with :event_id from the Ticket Group identified by :ticket_group_id.
@@ -316,20 +309,18 @@ paths:
           description: OK
       tags:
       - Events
-      - Event
-      - ""
+      - :event
       - Ticket
       - Classes
-      - Ticket
+      - :ticket
       - Class
-      - ""
       - Ticket
       - Groups
-      - Ticket
+      - :ticket
       - Group
   /events/:event_id/ticket_classes/:ticket_class_id/ticket_groups/:
     get:
-      summary: Get Events Event  Ticket Classes Ticket Class  Ticket Groups
+      summary: Get Events Event Ticket Classes Ticket Class Ticket Groups
       description: |-
         Get the Ticket Groups for Ticket Class with the specified :ticket_class_id that belongs to the event with :event_id.
         By default, only the ticket groups that are live are shown.
@@ -346,18 +337,16 @@ paths:
           description: OK
       tags:
       - Events
-      - Event
-      - ""
+      - :event
       - Ticket
       - Classes
-      - Ticket
+      - :ticket
       - Class
-      - ""
       - Ticket
       - Groups
   /users/:user_id/events/:event_id/ticket_classes/:ticket_class_id/ticket_groups/:
     post:
-      summary: Add Users User  Events Event  Ticket Classes Ticket Class  Ticket Groups
+      summary: Post Users User Events Event Ticket Classes Ticket Class Ticket Groups
       description: |-
         Add the Ticket Class with the specified :ticket_class_id of the event with :event_id that
         belongs to the user with :user_id to many Ticket Groups specified with ticket_group_ids.
@@ -374,16 +363,13 @@ paths:
           description: OK
       tags:
       - Users
-      - User
-      - ""
+      - :user
       - Events
-      - Event
-      - ""
+      - :event
       - Ticket
       - Classes
-      - Ticket
+      - :ticket
       - Class
-      - ""
       - Ticket
       - Groups
 ---
