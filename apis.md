@@ -4,16 +4,16 @@ description: This is a repository of classes APIs, self-contained as a Github re
   with HTML and YAML representations of the APIs and their surrounding operations.
 image: http://template.streamdata.gallery/assets/classes.png
 created: "2018-02-24"
-modified: "2018-06-17"
+modified: "2018-06-25"
 url: http://classes.streamdata.gallery/apis.json
 specificationVersion: "0.14"
 apis: []
 tags: Classes
 include:
-- name: Xignite
-  url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/xignite/apis.yaml
 - name: Eventbrite
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/apis.yaml
+- name: Xignite
+  url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/xignite/apis.yaml
 - name: BC Geographical Names
   url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/bc-geographical-names/apis.yaml
 - name: Blizzard
