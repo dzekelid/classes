@@ -7,148 +7,159 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventb
 x-kinRank: "9"
 x-alexaRank: "643"
 tags: Classes
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-25"
+modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Eventbrite Get Events Ticket Classes
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Events Ticket Classes
+  x-api-slug: eventsidticket-classes-get
   description: |-
     Returns a paginated response with a key of
     ticket_classes, containing a list of ticket_class.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/ticket_classes/
-  tags: Events,Ticket,Classes
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsidticket-classes-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsidticket-classes-get-openapi.md
-- name: Eventbrite Post Events Ticket Classes
-  x-api-slug: eventbrite
+- name: Eventbrite - Post Events Ticket Classes
+  x-api-slug: eventsidticket-classes-post
   description: |-
     Creates a new ticket class, returning the result as a ticket_class
     under the key ticket_class.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/ticket_classes/
-  tags: Events,Ticket,Classes
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsidticket-classes-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsidticket-classes-post-openapi.md
-- name: Eventbrite Get Events Ticket Classes Ticket Class
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Events Ticket Classes Ticket Class
+  x-api-slug: eventsidticket-classesticket-class-id-get
   description: |-
     Gets and returns a single ticket_class by ID, as the key
     ticket_class.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/ticket_classes/:ticket_class_id/
-  tags: Events,Ticket,Classes,:ticket,Class
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsidticket-classesticket-class-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsidticket-classesticket-class-id-get-openapi.md
-- name: Eventbrite Post Events Ticket Classes Ticket Class
-  x-api-slug: eventbrite
+- name: Eventbrite - Post Events Ticket Classes Ticket Class
+  x-api-slug: eventsidticket-classesticket-class-id-post
   description: Updates an existing ticket class, returning the updated result as a
     ticket_class under the key ticket_class.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/ticket_classes/:ticket_class_id/
-  tags: Events,Ticket,Classes,:ticket,Class
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsidticket-classesticket-class-id-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsidticket-classesticket-class-id-post-openapi.md
-- name: Eventbrite Delete Events Ticket Classes Ticket Class
-  x-api-slug: eventbrite
+- name: Eventbrite - Delete Events Ticket Classes Ticket Class
+  x-api-slug: eventsidticket-classesticket-class-id-delete
   description: 'Deletes the ticket class. Returns {&quot;deleted&quot;: true}.'
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/ticket_classes/:ticket_class_id/
-  tags: Events,Ticket,Classes,:ticket,Class
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsidticket-classesticket-class-id-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsidticket-classesticket-class-id-delete-openapi.md
-- name: Eventbrite Post Events Event Ticket Classes Ticket Class Ticket Groups Ticket
+- name: Eventbrite - Post Events Event Ticket Classes Ticket Class Ticket Groups Ticket
     Group
-  x-api-slug: eventbrite
+  x-api-slug: eventsevent-idticket-classesticket-class-idticket-groupsticket-group-id-post
   description: Add the Ticket Class with the specified :ticket_class_id that belongs
     to the event with :event_id to the Ticket Group identified by :ticket_group_id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/:event_id/ticket_classes/:ticket_class_id/ticket_groups/:ticket_group_id/
-  tags: Events,:event,Ticket,Classes,:ticket,Class,Ticket,Groups,:ticket,Group
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsevent-idticket-classesticket-class-idticket-groupsticket-group-id-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsevent-idticket-classesticket-class-idticket-groupsticket-group-id-post-openapi.md
-- name: Eventbrite Delete Events Event Ticket Classes Ticket Class Ticket Groups Ticket
-    Group
-  x-api-slug: eventbrite
+- name: Eventbrite - Delete Events Event Ticket Classes Ticket Class Ticket Groups
+    Ticket Group
+  x-api-slug: eventsevent-idticket-classesticket-class-idticket-groupsticket-group-id-delete
   description: Remove the Ticket Class with the specified :ticket_class_id that belongs
     to the event with :event_id from the Ticket Group identified by :ticket_group_id.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/:event_id/ticket_classes/:ticket_class_id/ticket_groups/:ticket_group_id/
-  tags: Events,:event,Ticket,Classes,:ticket,Class,Ticket,Groups,:ticket,Group
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsevent-idticket-classesticket-class-idticket-groupsticket-group-id-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsevent-idticket-classesticket-class-idticket-groupsticket-group-id-delete-openapi.md
-- name: Eventbrite Get Events Event Ticket Classes Ticket Class Ticket Groups
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Events Event Ticket Classes Ticket Class Ticket Groups
+  x-api-slug: eventsevent-idticket-classesticket-class-idticket-groups-get
   description: |-
     Get the Ticket Groups for Ticket Class with the specified :ticket_class_id that belongs to the event with :event_id.
     By default, only the ticket groups that are live are shown.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/:event_id/ticket_classes/:ticket_class_id/ticket_groups/
-  tags: Events,:event,Ticket,Classes,:ticket,Class,Ticket,Groups
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsevent-idticket-classesticket-class-idticket-groups-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/eventsevent-idticket-classesticket-class-idticket-groups-get-openapi.md
-- name: Eventbrite Post Users User Events Event Ticket Classes Ticket Class Ticket
+- name: Eventbrite - Post Users User Events Event Ticket Classes Ticket Class Ticket
     Groups
-  x-api-slug: eventbrite
+  x-api-slug: usersuser-ideventsevent-idticket-classesticket-class-idticket-groups-post
   description: |-
     Add the Ticket Class with the specified :ticket_class_id of the event with :event_id that
     belongs to the user with :user_id to many Ticket Groups specified with ticket_group_ids.
     If the list provided is empty, remove this ticket class from every ticket group.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///users/:user_id/events/:event_id/ticket_classes/:ticket_class_id/ticket_groups/
-  tags: Users,:user,Events,:event,Ticket,Classes,:ticket,Class,Ticket,Groups
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/usersuser-ideventsevent-idticket-classesticket-class-idticket-groups-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/usersuser-ideventsevent-idticket-classesticket-class-idticket-groups-post-openapi.md
-- name: Eventbrite
-  x-api-slug: eventbrite
-  description: Eventbrite brings people together through live experiences. Discover
-    events that match your passions, or create your own with online ticketing tools.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
-  humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
-  tags: Classes
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/classes/master/_listings/eventbrite/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://europeana.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://eventbrite.stack.network
 - type: x-apigee-console
   url: https://api.apigee.com/v1/consoles/eventbrite/apidescription?format=internal&ver=1351170233000
 - type: x-authentication
