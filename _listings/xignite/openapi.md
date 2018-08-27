@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Xignite
 x-complete: 1
@@ -14,4 +13,22 @@ produces:
 - application/json
 consumes:
 - application/json
----
+paths:
+  /ListInstrumentClasses:
+    get:
+      summary: List Instrument Classes
+      description: Get the possible instrument classes.
+      operationId: ListInstrumentClasses
+      x-api-path-slug: listinstrumentclasses-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - List
+      - Instrument
+      - Classes
